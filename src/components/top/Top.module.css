@@ -1,0 +1,64 @@
+.contop {
+  border-bottom: #eee solid 2px;
+}
+.top {
+  margin: 0 5%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.left img {
+  width: 20px;
+  height: 15px;
+}
+.left h6 {
+  font-size: 15px;
+  color: #6e6969;
+}
+.info {
+  position: relative;
+  margin-right: 30px;
+  border-right: #eee solid 2px;
+  padding: 5px 30px 5px 5px;
+}
+
+.imMap {
+  color: #ff4500;
+  width: 20px;
+  height: 15px;
+}
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 20px;
+}
+.icons {
+  background-color: #c7c5c5;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 10px; */
+}
+.icon {
+  width: 15px;
+  height: 15px;
+  color: white;
+  cursor: pointer;
+}
+@media screen and (max-width: 992px) {
+  .top {
+    display: none;
+  }
+}

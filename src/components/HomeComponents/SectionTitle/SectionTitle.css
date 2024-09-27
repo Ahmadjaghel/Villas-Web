@@ -1,0 +1,19 @@
+.title {
+  color: orangered;
+  padding-left: 5px;
+  position: relative;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 20px;
+  width: fit-content;
+}
+
+.title::before {
+  content: "";
+  width: 2px;
+  height: 80%;
+  background-color: orangered;
+  position: absolute;
+  top: 10%;
+  left: 0;
+}

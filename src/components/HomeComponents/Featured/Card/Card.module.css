@@ -1,0 +1,23 @@
+.inform {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border-bottom: solid 1px rgb(202, 202, 202);
+  padding: 16px 10px;
+  height: 25%;
+}
+.inform p:last-child {
+  color: rgb(179, 178, 178);
+  font-size: 12px;
+}
+.inform img {
+  height: 60px;
+}
+@media screen and (max-width: 992px) {
+  .inform {
+    width: 80%;
+  }
+}

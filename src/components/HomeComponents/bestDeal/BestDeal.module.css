@@ -1,0 +1,169 @@
+.bestDeal {
+  background-color: #eee;
+  padding: 80px 20px;
+}
+.container {
+  width: 80%;
+  margin: 0px auto;
+}
+
+.container .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+}
+.container .header div:first-child {
+  width: 300px;
+  position: relative;
+  gap: 5px;
+}
+.header div:first-child h6 {
+  padding-left: 6px;
+  color: rgb(230, 106, 24);
+}
+.header div:first-child h1 {
+  font-size: 40px;
+  width: 300px;
+}
+div h6:first-child::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 12px;
+  background-color: #ef626b;
+  left: 0;
+}
+.container .header div:last-child {
+  display: flex;
+  gap: 25px;
+  margin-top: 10px;
+}
+.btn {
+  cursor: pointer;
+  padding: 15px 25px;
+  font-size: 15px;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+.container .midlle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  margin-top: 50px;
+}
+
+.midlle .card {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 230px;
+  padding: 20px 15px;
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.midlle .card div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  gap: 0;
+  position: relative;
+}
+.midlle .card div:not(:last-child)::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #f0f2f5;
+  bottom: -15px;
+}
+.midlle .card div p {
+  color: #b9becb;
+}
+.midlle .card div span {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.midlle img {
+  /* height: 25vw; */
+  width: 30vw;
+  border-radius: 13px;
+}
+.description {
+  width: 250px;
+}
+.description h4 {
+  font-size: 20px;
+}
+.description p {
+  color: #5c5d6e;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 35px;
+  margin: 15px 0;
+}
+
+.grIcon {
+  position: absolute;
+  font-size: 25px;
+  left: -30px;
+  background-color: #f35525;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 10px;
+}
+@media screen and (max-width: 992px) {
+  .container .header {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .header div:first-child {
+    text-align: center;
+  }
+  div h6:first-child::after {
+    left: 119px;
+  }
+  .header div:last-child button {
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 7px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 3px;
+  }
+  .header div:last-child button:first-child {
+    padding: 10px 20px !important;
+    font-size: 10px;
+    background-color: #ea5e29;
+    color: white;
+    border: none;
+    border-radius: 3px;
+  }
+  .container .midlle {
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0px !important;
+    gap: 15px;
+  }
+  .midlle .card {
+    width: 270px;
+  }
+  .midlle img {
+    width: 300px;
+    height: 300px;
+  }
+  .description {
+    width: 300px;
+  }
+}

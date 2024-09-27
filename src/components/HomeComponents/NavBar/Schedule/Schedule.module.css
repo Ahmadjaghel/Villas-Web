@@ -1,0 +1,20 @@
+.Schedule {
+  background-color: black;
+  color: white;
+  padding: 11px 20px;
+  border-radius: 30px;
+  position: relative;
+  width: 170px;
+  display: flex;
+  justify-content: end;
+  margin: 0 auto;
+}
+.ScheduleIcon {
+  background-color: orangered;
+  width: fit-content;
+  padding: 10px 12px;
+  border-radius: 100%;
+  position: absolute;
+  left: -5px;
+  top: 0px;
+}
